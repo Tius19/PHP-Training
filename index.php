@@ -13,7 +13,14 @@
 
   <?php
     $greetings = "Hello World !";
-    echo "$greetings How are you ?";
+
+    function Hi() {
+      global $greetings;
+      echo "$greetings How are you ? Nice weather today, isn't it ?";
+    }
+
+    Hi();
+
   ?>
 
 </body>
