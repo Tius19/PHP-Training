@@ -16,10 +16,20 @@
 
     function Hi() {
       global $greetings;
-      echo "$greetings How are you ? Nice weather today, isn't it ?";
+      echo "$greetings How are you ? Nice weather today, isn't it ? <br>";
     }
 
     Hi();
+
+    function Math() {
+      static $x = 2;
+      echo "$x <br>";
+      $x++;
+    }
+
+    Math();
+    Math();
+    Math();
 
   ?>
 
