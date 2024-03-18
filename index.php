@@ -12,6 +12,25 @@
 </h1>
 
   <?php
+
+    class Manga {
+
+      public $author;
+      public $MC;
+      public function __construct($author, $MC)
+      {
+        $this->author = $author;
+        $this->MC = $MC;
+      }
+    }
+
+    $One_Piece = new Manga("Eichiro Oda", "Luffy");
+    $Gunnm = new Manga("Yukito Kishiro", "Gally");
+
+    echo "The author of One Piece is $One_Piece->author <br>";
+  ?> 
+
+  <?php
     $greetings = "Hello World !";
 
     function Hi() {
