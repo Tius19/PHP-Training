@@ -2,56 +2,60 @@
 <html>
 
 <head>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="container">
+    <h1>
+        Welcome Stranger !
+    </h1>
 
-<h1>
-    Welcome Stranger !
-</h1>
+      <?php
 
-  <?php
+        class Manga {
 
-    class Manga {
+          public $author;
+          public $MC;
+          public function __construct($author, $MC)
+          {
+            $this->author = $author;
+            $this->MC = $MC;
+          }
+        }
 
-      public $author;
-      public $MC;
-      public function __construct($author, $MC)
-      {
-        $this->author = $author;
-        $this->MC = $MC;
-      }
-    }
+        $One_Piece = new Manga("Eichiro Oda", "Luffy");
+        $Gunnm = new Manga("Yukito Kishiro", "Gally");
 
-    $One_Piece = new Manga("Eichiro Oda", "Luffy");
-    $Gunnm = new Manga("Yukito Kishiro", "Gally");
+        echo "The author of One Piece is $One_Piece->author <br>";
 
-    echo "The author of One Piece is $One_Piece->author <br>";
-  ?> 
+        echo strpos("It's a beautiful day", "day");
 
-  <?php
-    $greetings = "Hello World !";
+        echo "<br>";
+      ?> 
 
-    function Hi() {
-      global $greetings;
-      echo "$greetings How are you ? Nice weather today, isn't it ? <br>";
-    }
+      <?php
+        $greetings = "Hello World !";
 
-    Hi();
+        function Hi() {
+          global $greetings;
+          echo "$greetings How are you ? Nice weather today, isn't it ? <br>";
+        }
 
-    function Math() {
-      static $x = 2;
-      echo "$x <br>";
-      $x++;
-    }
+        Hi();
 
-    Math();
-    Math();
-    Math();
+        function Math() {
+          static $x = 2;
+          echo "$x <br>";
+          $x++;
+        }
 
-  ?>
+        Math();
+        Math();
+        Math();
 
+      ?>
+  </div>
 </body>
 
 </html>
