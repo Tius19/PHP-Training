@@ -54,6 +54,18 @@
         Math();
         Math();
 
+        echo "<br>";
+
+        $number = 5;
+
+        var_dump($number);
+
+        echo "<br>";
+
+        $number = (string) $number;
+
+        var_dump($number);
+
       ?>
   </div>
 </body>
