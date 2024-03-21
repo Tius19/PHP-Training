@@ -78,6 +78,12 @@
           echo "Impressive !!!";
         }
 
+        define("Jean", "Prenom coMMun");
+        define("Kevin", "Veuillez choisir un autre prenom", false);
+
+        echo "<br>" . Jean;
+        echo "<br>" . Kevin;
+
 
 
       ?>
