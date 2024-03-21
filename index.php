@@ -68,7 +68,17 @@
 
         echo "<br>";
 
-        echo (rand(24,73));
+        $x = (rand(24,73));
+
+        if ($x < 40 ) {
+          echo "Not really high...";
+        } elseif ( $x < 58 ) {
+          echo "Not bad !";
+        } else {
+          echo "Impressive !!!";
+        }
+
+
 
       ?>
   </div>
