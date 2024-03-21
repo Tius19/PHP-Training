@@ -66,6 +66,10 @@
 
         var_dump($number);
 
+        echo "<br>";
+
+        echo (rand(24,73));
+
       ?>
   </div>
 </body>
