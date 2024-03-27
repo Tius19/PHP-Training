@@ -68,15 +68,39 @@
 
         echo "<br>";
 
-        $x = (rand(24,73));
+      
 
-        if ($x < 40 ) {
-          echo "Not really high...";
+        function rating($x) {
+          if ($x < 40 ) {
+          echo "Not really high... <br>";
         } elseif ( $x < 58 ) {
-          echo "Not bad !";
+          echo "Not bad ! <br>";
         } else {
-          echo "Impressive !!!";
+          echo "Impressive !!! <br>";
+        }}
+
+
+
+        rating(rand(24,72));
+
+        $a = rand(0,50);
+        $b = rand(0,50);
+        $c = rand(0,50);
+
+        function check($a, $b, $c) {
+          if($a < $c && $b < $c) {
+            echo "$c is the greater number <br>";
+          } elseif( $b < $a && $c < $a ) {
+            echo "$a is the greater number <br>";
+          } else {
+            echo "It is a mistery <br>";
+          }
+          echo "$a <br>";
+          echo "$b  <br>";
+          echo "$c <br>";
         }
+
+        check($a, $b, $c);
 
         define("Jean", "Prenom coMMun");
         define("Kevin", "Veuillez choisir un autre prenom", false);
