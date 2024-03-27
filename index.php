@@ -102,6 +102,18 @@
 
         check($a, $b, $c);
 
+        $l = 8;
+
+        if($l < 10) $m = "Hey";
+
+        echo "$m <br>";
+
+        $k = 7;
+
+        $j = $k < 9 ? "Hello" : "Bye";
+
+        echo $j;
+
         define("Jean", "Prenom coMMun");
         define("Kevin", "Veuillez choisir un autre prenom", false);
 
