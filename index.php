@@ -89,11 +89,11 @@
 
         function check($a, $b, $c) {
           if($a < $c && $b < $c) {
-            echo "$c is the greater number <br>";
+            echo "$c is the biggest number <br>";
           } elseif( $b < $a && $c < $a ) {
-            echo "$a is the greater number <br>";
+            echo "$a is the biggest number <br>";
           } else {
-            echo "It is a mistery <br>";
+            echo "It is a mystery <br>";
           }
           echo "$a <br>";
           echo "$b  <br>";
