@@ -120,6 +120,24 @@
         echo "<br>" . Jean;
         echo "<br>" . Kevin;
 
+        echo "<br>";
+
+        
+
+        switch ($human) {
+          case "baby" :
+            echo "You're between zero and four years old";
+            break;
+          case "child" :
+            echo "You're between five and twelve years old";
+          break;
+          case "teenager" :
+            echo "You're between thirteen and seventeen years old";
+          break;
+          default :
+          echo "You're an adult";
+        }
+
 
 
       ?>
