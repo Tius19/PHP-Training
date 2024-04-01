@@ -31,6 +31,10 @@
 
         echo strpos("It's a beautiful day", "day");
 
+        foreach ($One_Piece as $x => $y ) {
+          echo "<br> $x : $y <br>";
+        }
+
         echo "<br>";
       ?> 
 
@@ -147,6 +151,12 @@
 
         for ($d = 2; $d < 8; $d+=2) {
           echo "<br> The number is : $d <br>";
+        }
+
+        $city = array("Port-Louis", "Curepipe", "Tamarin");
+
+        foreach($city as $x) {
+          echo "<br> $x est une ville de Maurice <br>";
         }
 
 
