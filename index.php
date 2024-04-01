@@ -126,17 +126,24 @@
 
         switch ($human) {
           case "baby" :
-            echo "You're between zero and four years old";
+            echo "You're between zero and four years old <br>";
             break;
           case "child" :
-            echo "You're between five and twelve years old";
+            echo "You're between five and twelve years old <br>";
           break;
           case "teenager" :
-            echo "You're between thirteen and seventeen years old";
+            echo "You're between thirteen and seventeen years old <br>";
           break;
           default :
-          echo "You're an adult";
+          echo "You're an adult <br>";
         }
+
+        $p = 4;
+
+        do {
+          echo $p;
+          $p++;
+        } while ($p < 3 )
 
 
 
