@@ -143,7 +143,11 @@
         do {
           echo $p;
           $p++;
-        } while ($p < 3 )
+        } while ($p < 3 );
+
+        for ($d = 2; $d < 8; $d+=2) {
+          echo "<br> The number is : $d <br>";
+        }
 
 
 
