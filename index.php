@@ -159,6 +159,22 @@
           echo "<br> $x est une ville de Maurice <br>";
         }
 
+        $god = "None";
+
+        switch($god) {
+          case "Jesus" :
+            echo "<br> You're a christian <br>";
+            break;
+          case "Allah" :
+            echo "<br> You're a muslim <br>";
+            break;
+          case "Yahweh" :
+            echo "<br> You're jewish <br>";
+            break;
+          default :
+          echo "<br> You're an atheist";  
+        }
+
 
 
       ?>
