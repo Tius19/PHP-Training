@@ -172,7 +172,17 @@
             echo "<br> You're jewish <br>";
             break;
           default :
-          echo "<br> You're an atheist";  
+          echo "<br> You're an atheist <br>";  
+        }
+
+        $fruits = ["banana", "apple", "grapes"];
+        foreach($fruits as $x) {
+          echo "$x <br>";
+        }
+
+        $mauritius = ["capital" => "Port Louis", "population" => "1.3 millions", "continent" => "Africa"];
+        foreach($mauritius as $x => $y) {
+          echo "<br> The $x of Mauritius is $y <br>";
         }
 
 
